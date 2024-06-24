@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  bot-started:
+    container_name: bot-starter
+    build: .
+    restart: unless-stopped
+    volumes:
+      - .:/app
